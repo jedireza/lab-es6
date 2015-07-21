@@ -1,0 +1,17 @@
+{
+  "name": "lab-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -t 100 -S -T ./test/transform.js ./test/src/",
+    "cover": "lab -S -T ./test/transform.js -r html -o ./test/artifacts/coverage.html ./test/src/ && open ./test/artifacts/coverage.html && exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^5.8.3",
+    "code": "^1.4.1",
+    "lab": "^5.13.0"
+  }
+}
