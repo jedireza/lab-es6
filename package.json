@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "lab -t 100 -S -T ./node_modules/lab-babel ./test/src/",
-    "cover": "lab -S -T ./node_modules/lab-babel -r html -o ./test/artifacts/coverage.html ./test/src/ && open ./test/artifacts/coverage.html && exit 0"
+    "test": "lab -t 100 -S -T ./node_modules/lab-babel -I __core-js_shared__ ./test/src/",
+    "cover": "lab -S -T ./node_modules/lab-babel -I __core-js_shared__ -r html -o ./test/artifacts/coverage.html ./test/src/ && open ./test/artifacts/coverage.html && exit 0"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^5.8.3",
-    "code": "^1.4.1",
-    "lab": "^5.13.0",
-    "lab-babel": "git@github.com:phated/lab-babel.git"
+    "babel-core": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "code": "^2.0.1",
+    "lab": "^8.0.0",
+    "lab-babel": "^1.1.1"
   }
 }
