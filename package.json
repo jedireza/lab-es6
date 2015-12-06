@@ -15,6 +15,6 @@
     "babel-preset-stage-0": "^6.3.13",
     "code": "^2.0.1",
     "lab": "^8.0.0",
-    "lab-babel": "git@github.com:phated/lab-babel.git"
+    "lab-babel": "^1.1.0"
   }
 }
