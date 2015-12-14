@@ -1,11 +1,12 @@
 {
   "name": "lab-es6",
   "version": "1.0.0",
+  "repository": "https://github.com/jedireza/lab-es6",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "lab -t 100 -S -T ./node_modules/lab-babel -I __core-js_shared__ ./test/src/",
-    "cover": "lab -S -T ./node_modules/lab-babel -I __core-js_shared__ -r html -o ./test/artifacts/coverage.html ./test/src/ && open ./test/artifacts/coverage.html && exit 0"
+    "test": "scripts/test",
+    "cover": "scripts/cover"
   },
   "author": "",
   "license": "ISC",
