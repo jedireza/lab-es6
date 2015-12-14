@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+export NODE_ENV=test;
+
+mkdir -p ./coverage
+
+# run the tests
+lab -S -T ./node_modules/lab-babel -I __core-js_shared__ -r html -o ./test/artifacts/coverage.html ./test/src/ 
+
+# open coverage page
+open ./test/artifacts/coverage.html 
+
+# exit the coverage script
+exit 0

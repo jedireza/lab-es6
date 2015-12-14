@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+export NODE_ENV=test;
+
+# run the tests
+lab -t 100 -S -T ./node_modules/lab-babel -I __core-js_shared__ ./test/src
