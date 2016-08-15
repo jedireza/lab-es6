@@ -1,11 +1,13 @@
-class DoSomething {
-  static addSomething (value) {
-    return value + 'Something';
+'use strict';
+
+class FiveMath {
+  static addFive (value) {
+    return value + 5;
   }
-  static subtractSomething (value) {
-    return 5 - value;
+  static subtractFive (value) {
+    return value - 5;
   }
 }
 
 
-export default DoSomething;
+export default FiveMath;
