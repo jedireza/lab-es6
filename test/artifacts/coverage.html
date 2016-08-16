@@ -540,7 +540,7 @@
         <li><a href="#tests">Test Report</a></li>
         <li><a href="#coverage">Coverage Report</a></li>
         <li>
-            <span class="cov high">95.83</span>
+            <span class="cov high">100</span>
             <a href="#src/index.js"><span class="dirname">src/</span><span class="basename">index.js</span></a>
         </li>
         <li><a href="#linting">Linting Report</a></li>
@@ -588,19 +588,19 @@
     </div>    <div id="coverage">
         <h1>Code Coverage Report</h1>
         <div class="stats high">
-            <div class="percentage">95.83%</div>
-            <div class="sloc">24</div>
-            <div class="hits">23</div>
-            <div class="misses">1</div>
+            <div class="percentage">100%</div>
+            <div class="sloc">31</div>
+            <div class="hits">31</div>
+            <div class="misses">0</div>
         </div>
         <div id="files">
             <div class="file">
                 <h2 id="src/index.js">src/index.js</h2>
                 <div class="stats high">
-                    <div class="percentage">95.83%</div>
-                    <div class="sloc">24</div>
-                    <div class="hits">23</div>
-                    <div class="misses">1</div>
+                    <div class="percentage">100%</div>
+                    <div class="sloc">31</div>
+                    <div class="hits">31</div>
+                    <div class="misses">0</div>
                 </div>
                 <table>
                     <thead>
@@ -618,7 +618,7 @@
                             <td class="line" data-tooltip>1</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">&#x27;use strict&#x27;;</td>
+                            <td class="source">/*$lab:coverage:off$*/&#x27;use strict&#x27;;</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
                                 <td class="sourcemaps line" data-tooltip>1</td>
                         </tr>
@@ -628,15 +628,15 @@
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>1</td>
+                                <td class="sourcemaps line" data-tooltip>2</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>3</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">/*$lab:coverage:off$*/Object.defineProperty(exports, &quot;__esModule&quot;, {</td>
+                            <td class="source">Object.defineProperty(exports, &quot;__esModule&quot;, {</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>1</td>
+                                <td class="sourcemaps line" data-tooltip>3</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>4</td>
@@ -644,7 +644,7 @@
                             <td class="hits" data-tooltip></td>
                             <td class="source">  value: true</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>1</td>
+                                <td class="sourcemaps line" data-tooltip>4</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>5</td>
@@ -652,7 +652,7 @@
                             <td class="hits" data-tooltip></td>
                             <td class="source">});</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>1</td>
+                                <td class="sourcemaps line" data-tooltip>5</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>6</td>
@@ -660,15 +660,15 @@
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>1</td>
+                                <td class="sourcemaps line" data-tooltip>6</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>7</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">var _createClass &#x3D; function () { function defineProperties(target, props) { for (var i &#x3D; 0; i &lt; props.length; i++) { var descriptor &#x3D; props[i]; descriptor.enumerable &#x3D; descriptor.enumerable || false; descriptor.configurable &#x3D; true; if (&quot;value&quot; in descriptor) descriptor.writable &#x3D; true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();</td>
+                            <td class="source">var _createClass &#x3D; function () { function defineProperties(target, props) { for (var i &#x3D; 0; i &lt; props.length; i++) { var descriptor &#x3D; props[i]; descriptor.enumerable &#x3D; descriptor.enumerable || false; descriptor.configurable &#x3D; true; if (&quot;value&quot; in descriptor) descriptor.writable &#x3D; true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* $lab:coverage:off$ */</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>1</td>
+                                <td class="sourcemaps line" data-tooltip>7</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>8</td>
@@ -682,49 +682,49 @@
                             <td class="line" data-tooltip>9</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(&quot;Cannot call a class as a function&quot;); } }</td>
+                            <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
                                 <td class="sourcemaps line" data-tooltip>1</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>10</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">/*$lab:coverage:on$*/var /*$lab:coverage:off$*/_fs &#x3D; require(&#x27;fs&#x27;) /*$lab:coverage:on$*/;</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
                                 <td class="sourcemaps line" data-tooltip>1</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>11</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">var /*$lab:coverage:on$*/FiveMath &#x3D; function () {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>1</td>
+                                <td class="sourcemaps line" data-tooltip>2</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>12</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">  function FiveMath() {</td>
+                            <td class="source">/*$lab:coverage:off$*/var _fs2 &#x3D; _interopRequireDefault(_fs);</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>12</td>
+                                <td class="sourcemaps line" data-tooltip>2</td>
                         </tr>
-                            <tr class="miss">
-                                <td class="line" data-tooltip>13</td>
-                                <td class="lint empty"></td>
-                                <td class="hits" data-tooltip></td>
-                                <td class="source" data-tooltip>    _classCallCheck(this, FiveMath);</td>
-                                    <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                    <td class="sourcemaps line" data-tooltip>13</td>
-                            </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>13</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>2</td>
+                        </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>14</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">  }</td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">/*$lab:coverage:on$*/var /*$lab:coverage:off$*/_path &#x3D; require(&#x27;path&#x27;) /*$lab:coverage:on$*/;</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>14</td>
+                                <td class="sourcemaps line" data-tooltip>2</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>15</td>
@@ -732,95 +732,95 @@
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>15</td>
+                                <td class="sourcemaps line" data-tooltip>3</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>16</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">  _createClass(FiveMath, null, [{</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">/*$lab:coverage:off$*/var _path2 &#x3D; _interopRequireDefault(_path);</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>16</td>
+                                <td class="sourcemaps line" data-tooltip>3</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>17</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    key: &#x27;addFive&#x27;,</td>
+                            <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>17</td>
+                                <td class="sourcemaps line" data-tooltip>3</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>18</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    value: function addFive(value) {</td>
+                            <td class="source">function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>18</td>
+                                <td class="sourcemaps line" data-tooltip>3</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>19</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">      return value + 5;</td>
+                            <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>5</td>
+                                <td class="sourcemaps line" data-tooltip>3</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>20</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    }</td>
+                            <td class="source">function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(&quot;Cannot call a class as a function&quot;); } }</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>6</td>
+                                <td class="sourcemaps line" data-tooltip>3</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>21</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">  }, {</td>
+                            <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>6</td>
+                                <td class="sourcemaps line" data-tooltip>3</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>22</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    key: &#x27;subtractFive&#x27;,</td>
+                            <td class="source">/* $lab:coverage:on$ */</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>6</td>
+                                <td class="sourcemaps line" data-tooltip>4</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>23</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    value: function subtractFive(value) {</td>
+                            <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>6</td>
+                                <td class="sourcemaps line" data-tooltip>4</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>24</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">      return value - 5;</td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">var /*$lab:coverage:on$*/FiveMath &#x3D; function () {</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>8</td>
+                                <td class="sourcemaps line" data-tooltip>4</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>25</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    }</td>
+                            <td class="source">  function /*$lab:coverage:off$*/FiveMath /*$lab:coverage:on$*/() {</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>9</td>
+                                <td class="sourcemaps line" data-tooltip>7</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>26</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">  }]);</td>
+                            <td class="source">    /*$lab:coverage:off$*/_classCallCheck(this, FiveMath);</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>9</td>
+                                <td class="sourcemaps line" data-tooltip>7</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>27</td>
@@ -828,21 +828,21 @@
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>9</td>
+                                <td class="sourcemaps line" data-tooltip>7</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>28</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
-                            <td class="source">  return FiveMath;</td>
+                            <td class="source">    /*$lab:coverage:on$*/this.something &#x3D; true;</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>9</td>
+                                <td class="sourcemaps line" data-tooltip>7</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>29</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">}();</td>
+                            <td class="source">  }</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
                                 <td class="sourcemaps line" data-tooltip>9</td>
                         </tr>
@@ -858,7 +858,7 @@
                             <td class="line" data-tooltip>31</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
-                            <td class="source">/*$lab:coverage:off$*/exports.default &#x3D; /*$lab:coverage:on$*/FiveMath;</td>
+                            <td class="source">  _createClass(FiveMath, null, [{</td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
                                 <td class="sourcemaps line" data-tooltip>9</td>
                         </tr>
@@ -866,9 +866,129 @@
                             <td class="line" data-tooltip>32</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
+                            <td class="source">    key: &#x27;addFive&#x27;,</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>9</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>33</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    value: function addFive(value) {</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>9</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>34</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">      return value + 5;</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>11</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>35</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    }</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>12</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>36</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">  }, {</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>12</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>37</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    key: &#x27;subtractFive&#x27;,</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>12</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>38</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    value: function subtractFive(value) {</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>12</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>39</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">      return value - 5;</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>14</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>40</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    }</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>15</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>41</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">  }]);</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>15</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>42</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                                 <td class="sourcemaps file" data-tooltip>src/index.js</td>
-                                <td class="sourcemaps line" data-tooltip>32</td>
+                                <td class="sourcemaps line" data-tooltip>15</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>43</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">  return FiveMath;</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>15</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>44</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">}();</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>15</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>45</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>15</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>46</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">/*$lab:coverage:off$*/exports.default &#x3D; /*$lab:coverage:on$*/FiveMath;</td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>15</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>47</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                                <td class="sourcemaps file" data-tooltip>src/index.js</td>
+                                <td class="sourcemaps line" data-tooltip>47</td>
                         </tr>
                     </tbody>
                 </table>

@@ -5,6 +5,7 @@ import FiveMath from '../../src/index.js';
 
 
 let lab = exports.lab = Lab.script();
+const fiveMath = new FiveMath();
 
 
 lab.experiment('Test', () => {
